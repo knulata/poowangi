@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POOWANGI - Magical Toilet Spray | Trap Odor Before It Starts</title>
-    <meta name="description" content="POOWANGI Magical Toilet Spray - Made with natural essential oils. Spray before you go, trap odor beneath the water. Available in Lavender and Lemon blends at AEON stores and Tokopedia.">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>POOWANGI - Magical Toilet Spray | Hilangkan Bau Sebelum Tercium</title>
+    <meta name="description" content="POOWANGI Magical Toilet Spray - Terbuat dari essential oil alami. Semprot sebelum Anda gunakan, bau terjebak di bawah air. Tersedia dalam varian Lavender dan Lemon di AEON dan Tokopedia.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -81,6 +81,19 @@
             align-items: center;
         }
 
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--lavender);
+        }
+
         .lang-switch {
             display: flex;
             gap: 0.5rem;
@@ -100,19 +113,6 @@
         .lang-switch a.active {
             background: var(--lavender);
             color: var(--white);
-        }
-
-        nav a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--lavender);
         }
 
         .nav-toggle {
@@ -842,14 +842,14 @@
             <div class="brand">POOWANGI</div>
             <button class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')">&#9776;</button>
             <ul class="nav-menu">
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#features">Why Poowangi</a></li>
-                <li><a href="#wheretobuy">Buy Now</a></li>
+                <li><a href="#how-it-works">Cara Pakai</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#features">Keunggulan</a></li>
+                <li><a href="#wheretobuy">Beli Sekarang</a></li>
                 <li>
                     <div class="lang-switch">
-                        <a href="./" class="active">EN</a>
-                        <a href="./id/">ID</a>
+                        <a href="../">EN</a>
+                        <a href="./" class="active">ID</a>
                     </div>
                 </li>
             </ul>
@@ -864,29 +864,29 @@
                     <span>Poowangi</span>
                     Magical Toilet Spray
                 </h1>
-                <p class="tagline">Trap odor before it starts. Just spray, go, and flush &mdash; no one will ever know.</p>
+                <p class="tagline">Hilangkan bau sebelum tercium. Cukup semprot, pakai, dan siram &mdash; tidak ada yang tahu.</p>
                 <div class="hero-badges">
                     <div class="badge">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        Natural Essential Oils
+                        Essential Oil Alami
                     </div>
                     <div class="badge">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
-                        18 ML Pocket Size
+                        Ukuran 18 ML
                     </div>
                     <div class="badge">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                        200+ Sprays Per Bottle
+                        200+ Kali Semprot
                     </div>
                 </div>
                 <div>
-                    <a href="#wheretobuy" class="btn btn-primary">Get Yours Now</a>
-                    <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+                    <a href="#wheretobuy" class="btn btn-primary">Beli Sekarang</a>
+                    <a href="#how-it-works" class="btn btn-secondary">Cara Pakai</a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="hero-image-wrapper">
-                    <img src="images/hero-poowangi.jpg" alt="Poowangi Magical Toilet Spray - Lavender and Lemon blends" loading="lazy">
+                    <img src="../images/hero-poowangi.jpg" alt="Poowangi Magical Toilet Spray - Varian Lavender dan Lemon" loading="lazy">
                 </div>
             </div>
         </div>
@@ -895,24 +895,24 @@
     <!-- How It Works Section -->
     <section class="how-it-works" id="how-it-works">
         <div class="container">
-            <p class="section-label">How It Works</p>
-            <h2 class="section-title">Simple as 1-2-3</h2>
-            <p class="section-desc">Poowangi creates an aromatic barrier on the water's surface, trapping odor beneath before it escapes.</p>
+            <p class="section-label">Cara Pakai</p>
+            <h2 class="section-title">Semudah 1-2-3</h2>
+            <p class="section-desc">Poowangi menciptakan lapisan aromatik di permukaan air, menjebak bau di bawah sebelum keluar.</p>
             <div class="steps-grid">
                 <div class="step-card">
                     <div class="step-number">1</div>
-                    <h3>Spray</h3>
-                    <p>Spray 3-5 spritz of Poowangi into the toilet bowl water before you sit down. The essential oils form a protective layer on the water's surface.</p>
+                    <h3>Semprot</h3>
+                    <p>Semprotkan 3-5 kali ke dalam air toilet sebelum Anda duduk. Essential oil membentuk lapisan pelindung di permukaan air.</p>
                 </div>
                 <div class="step-card">
                     <div class="step-number">2</div>
-                    <h3>Go</h3>
-                    <p>Do your business as usual. The aromatic oil barrier traps all odors beneath the water surface, so nothing escapes into the air.</p>
+                    <h3>Pakai</h3>
+                    <p>Gunakan toilet seperti biasa. Lapisan minyak aromatik menjebak semua bau di bawah permukaan air, sehingga tidak keluar ke udara.</p>
                 </div>
                 <div class="step-card">
                     <div class="step-number">3</div>
-                    <h3>Flush</h3>
-                    <p>Flush and walk away with confidence. The bathroom smells fresh and pleasant &mdash; no one will ever know what happened.</p>
+                    <h3>Siram</h3>
+                    <p>Siram dan keluar dengan percaya diri. Kamar mandi tetap wangi dan segar &mdash; tidak ada yang tahu apa yang terjadi.</p>
                 </div>
             </div>
         </div>
@@ -921,39 +921,39 @@
     <!-- Products Section -->
     <section class="products" id="products">
         <div class="container">
-            <p class="section-label">Our Products</p>
-            <h2 class="section-title">Two Refreshing Blends</h2>
-            <p class="section-desc">Made with natural essential oils, each blend is crafted to deliver a delightful scent experience.</p>
+            <p class="section-label">Produk Kami</p>
+            <h2 class="section-title">Dua Varian Menyegarkan</h2>
+            <p class="section-desc">Terbuat dari essential oil alami, setiap varian dirancang untuk memberikan pengalaman aroma yang menyenangkan.</p>
             <div class="product-grid">
                 <div class="product-card">
                     <div class="product-card-lavender product-card-image-placeholder">
-                        <img src="images/product-lavender.jpg" alt="Poowangi Lavender Blend" class="product-card-image" loading="lazy"
+                        <img src="../images/product-lavender.jpg" alt="Poowangi Lavender Blend" class="product-card-image" loading="lazy"
                             onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:400px;font-size:5rem\'>&#x1F33F;</div>'">
                     </div>
                     <div class="product-info">
                         <h3>Lavender Blend</h3>
                         <p class="product-size">18 ML &middot; Magical Toilet Spray</p>
-                        <p>A calming, floral blend of pure lavender essential oils. Brings tranquility to your bathroom experience with its soothing natural aroma.</p>
+                        <p>Perpaduan bunga lavender yang menenangkan. Menghadirkan ketenangan ke pengalaman kamar mandi Anda dengan aroma alami yang menyejukkan.</p>
                         <div class="scent-notes">
                             <span class="scent-tag">Lavender</span>
                             <span class="scent-tag">Floral</span>
-                            <span class="scent-tag">Calming</span>
+                            <span class="scent-tag">Menenangkan</span>
                         </div>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-card-lemon product-card-image-placeholder">
-                        <img src="images/product-lemon.jpg" alt="Poowangi Lemon Blend" class="product-card-image" loading="lazy"
+                        <img src="../images/product-lemon.jpg" alt="Poowangi Lemon Blend" class="product-card-image" loading="lazy"
                             onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:400px;font-size:5rem\'>&#x1F34B;</div>'">
                     </div>
                     <div class="product-info">
                         <h3>Lemon Blend</h3>
                         <p class="product-size">18 ML &middot; Magical Toilet Spray</p>
-                        <p>A bright, citrusy blend of pure lemon essential oils. Energizes your senses and leaves the bathroom smelling crisp and naturally fresh.</p>
+                        <p>Perpaduan jeruk lemon yang segar. Menyegarkan indra Anda dan meninggalkan kamar mandi berbau bersih dan alami.</p>
                         <div class="scent-notes">
                             <span class="scent-tag lemon">Lemon</span>
                             <span class="scent-tag lemon">Citrus</span>
-                            <span class="scent-tag lemon">Fresh</span>
+                            <span class="scent-tag lemon">Segar</span>
                         </div>
                     </div>
                 </div>
@@ -964,9 +964,9 @@
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
-            <p class="section-label">Why Poowangi</p>
-            <h2 class="section-title">Not Your Ordinary Air Freshener</h2>
-            <p class="section-desc">Poowangi stops odor at the source instead of masking it. Pure science meets natural ingredients.</p>
+            <p class="section-label">Keunggulan</p>
+            <h2 class="section-title">Bukan Pengharum Biasa</h2>
+            <p class="section-desc">Poowangi menghentikan bau di sumbernya, bukan menutupinya. Sains murni bertemu bahan alami.</p>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -974,8 +974,8 @@
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                         </svg>
                     </div>
-                    <h3>Traps Odor at Source</h3>
-                    <p>Creates an essential oil barrier on the water, trapping odor before it enters the air.</p>
+                    <h3>Jebak Bau di Sumber</h3>
+                    <p>Menciptakan lapisan essential oil di air, menjebak bau sebelum keluar ke udara.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -984,8 +984,8 @@
                             <path d="M15.705 5.118l2.34 2.34"/>
                         </svg>
                     </div>
-                    <h3>Natural Essential Oils</h3>
-                    <p>Made from pure essential oils. No harsh chemicals, no synthetic fragrances, no aerosol.</p>
+                    <h3>Essential Oil Alami</h3>
+                    <p>Terbuat dari essential oil murni. Tanpa bahan kimia keras, tanpa pewangi sintetis, tanpa aerosol.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -994,8 +994,8 @@
                             <path d="M8 21h8M12 17v4"/>
                         </svg>
                     </div>
-                    <h3>Pocket-Sized</h3>
-                    <p>Slim 18ml design fits in your pocket or purse. Perfect for travel, office, and on-the-go.</p>
+                    <h3>Ukuran Saku</h3>
+                    <p>Desain ramping 18ml muat di saku atau tas. Sempurna untuk perjalanan, kantor, dan bepergian.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -1003,8 +1003,8 @@
                             <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
                         </svg>
                     </div>
-                    <h3>200+ Sprays</h3>
-                    <p>Each small bottle packs over 200 uses. Incredible value that lasts for weeks.</p>
+                    <h3>200+ Kali Semprot</h3>
+                    <p>Setiap botol kecil berisi lebih dari 200 penggunaan. Nilai luar biasa yang bertahan berminggu-minggu.</p>
                 </div>
             </div>
         </div>
@@ -1013,11 +1013,11 @@
     <!-- Gallery Section -->
     <section class="gallery">
         <div class="gallery-grid">
-            <img src="images/gallery-1.jpg" alt="Poowangi products" loading="lazy"
+            <img src="../images/gallery-1.jpg" alt="Produk Poowangi" loading="lazy"
                 onerror="this.style.background='linear-gradient(135deg, #E8DCF5, #D4BEE8)';this.style.display='block'">
-            <img src="images/gallery-2.jpg" alt="Poowangi lavender spray" loading="lazy"
+            <img src="../images/gallery-2.jpg" alt="Poowangi semprot lavender" loading="lazy"
                 onerror="this.style.background='linear-gradient(135deg, #D4BEE8, #9B6EC5)';this.style.display='block'">
-            <img src="images/gallery-3.jpg" alt="Poowangi lemon spray" loading="lazy"
+            <img src="../images/gallery-3.jpg" alt="Poowangi semprot lemon" loading="lazy"
                 onerror="this.style.background='linear-gradient(135deg, #FFF4CC, #FFE896)';this.style.display='block'">
         </div>
     </section>
@@ -1025,23 +1025,23 @@
     <!-- Where to Buy Section -->
     <section class="where-to-buy" id="wheretobuy">
         <div class="container">
-            <p class="section-label">Where to Buy</p>
-            <h2 class="section-title">Get Your Poowangi</h2>
-            <p class="section-desc">Available at these trusted stores across Indonesia.</p>
+            <p class="section-label">Tempat Beli</p>
+            <h2 class="section-title">Dapatkan Poowangi Anda</h2>
+            <p class="section-desc">Tersedia di toko-toko terpercaya di seluruh Indonesia.</p>
             <div class="store-grid">
                 <div class="store-card">
-                    <img src="images/aeon.png" alt="AEON Store">
+                    <img src="../images/aeon.png" alt="AEON Store">
                     <span>AEON Store</span>
-                    <span class="store-type">In-Store</span>
+                    <span class="store-type">Toko Fisik</span>
                 </div>
                 <a href="https://tk.tokopedia.com/ZSa3G91Hj/" target="_blank" rel="noopener" class="store-card">
-                    <img src="images/tokopedia.png" alt="Tokopedia">
+                    <img src="../images/tokopedia.png" alt="Tokopedia">
                     <span>Tokopedia</span>
-                    <span class="store-type">Online Shop</span>
+                    <span class="store-type">Toko Online</span>
                 </a>
             </div>
             <div class="buy-buttons">
-                <a href="https://tk.tokopedia.com/ZSa3G91Hj/" target="_blank" rel="noopener" class="btn btn-store">Shop on Tokopedia</a>
+                <a href="https://tk.tokopedia.com/ZSa3G91Hj/" target="_blank" rel="noopener" class="btn btn-store">Beli di Tokopedia</a>
             </div>
         </div>
     </section>
@@ -1051,21 +1051,21 @@
         <div class="container">
             <div>
                 <div class="footer-brand">POOWANGI</div>
-                <p>Magical Toilet Spray made with natural essential oils. Trap odor before it starts &mdash; just spray, go, and flush.</p>
+                <p>Magical Toilet Spray terbuat dari essential oil alami. Hilangkan bau sebelum tercium &mdash; cukup semprot, pakai, dan siram.</p>
             </div>
             <div>
-                <h4>Products</h4>
+                <h4>Produk</h4>
                 <a href="#products">Lavender Blend</a>
                 <a href="#products">Lemon Blend</a>
             </div>
             <div>
-                <h4>Buy Now</h4>
+                <h4>Beli Sekarang</h4>
                 <a href="https://tk.tokopedia.com/ZSa3G91Hj/" target="_blank" rel="noopener">Tokopedia</a>
                 <a href="#wheretobuy">AEON Stores</a>
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2025 POOWANGI. All rights reserved.
+            &copy; 2025 POOWANGI. Hak cipta dilindungi.
         </div>
     </footer>
 </body>
