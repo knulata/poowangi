@@ -67,11 +67,13 @@
         }
 
         nav .brand {
-            font-family: 'DM Sans', sans-serif;
-            font-weight: 700;
-            font-size: 1.6rem;
-            letter-spacing: 3px;
-            color: var(--text);
+            display: flex;
+            align-items: center;
+        }
+
+        nav .brand img {
+            height: 32px;
+            width: auto;
         }
 
         nav ul {
@@ -683,12 +685,13 @@
         }
 
         .footer-brand {
-            font-family: 'DM Sans', sans-serif;
-            font-weight: 700;
-            font-size: 1.5rem;
-            letter-spacing: 3px;
-            color: var(--white);
             margin-bottom: 1rem;
+        }
+
+        .footer-brand img {
+            height: 28px;
+            width: auto;
+            filter: brightness(0) invert(1);
         }
 
         footer p {
@@ -839,7 +842,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="brand">POOWANGI</div>
+            <a href="./" class="brand"><img src="images/logo.png" alt="POOWANGI"></a>
             <button class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')">&#9776;</button>
             <ul class="nav-menu">
                 <li><a href="#how-it-works">How It Works</a></li>
@@ -1050,7 +1053,7 @@
     <footer>
         <div class="container">
             <div>
-                <div class="footer-brand">POOWANGI</div>
+                <div class="footer-brand"><img src="images/logo.png" alt="POOWANGI"></div>
                 <p>Magical Toilet Spray made with natural essential oils. Trap odor before it starts &mdash; just spray, go, and flush.</p>
             </div>
             <div>
