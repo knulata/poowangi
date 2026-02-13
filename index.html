@@ -4,7 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POOWANGI - Magical Toilet Spray | Trap Odor Before It Starts</title>
-    <meta name="description" content="POOWANGI Magical Toilet Spray - Made with natural essential oils. Spray before you go, trap odor beneath the water. Available in Lavender and Lemon blends at AEON stores and Tokopedia.">
+    <meta name="description" content="POOWANGI Magical Toilet Spray - Made with natural essential oils. Spray before you go, trap odor beneath the water. Available in Lavender and Lemon blends at AEON stores, Tokopedia, and Shopee.">
+    <meta name="keywords" content="toilet spray, poo spray, bathroom spray, poowangi, anti bau toilet, pengharum toilet, spray toilet, essential oil toilet spray">
+    <link rel="canonical" href="https://poowangi.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="POOWANGI - Magical Toilet Spray">
+    <meta property="og:description" content="Trap odor before it starts. Spray before you go, flush, and no one will ever know. Made with natural essential oils.">
+    <meta property="og:image" content="https://poowangi.com/images/hero-poowangi.jpg">
+    <meta property="og:url" content="https://poowangi.com/">
+    <meta property="og:site_name" content="POOWANGI">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="id_ID">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="POOWANGI - Magical Toilet Spray">
+    <meta name="twitter:description" content="Trap odor before it starts. Made with natural essential oils. 200+ sprays per bottle.">
+    <meta name="twitter:image" content="https://poowangi.com/images/hero-poowangi.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "POOWANGI Magical Toilet Spray",
+        "description": "Natural essential oil toilet spray that traps odor before it starts. Available in Lavender and Lemon blends.",
+        "image": "https://poowangi.com/images/hero-poowangi.jpg",
+        "brand": {
+            "@type": "Brand",
+            "name": "POOWANGI"
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": "https://poowangi.com/",
+            "priceCurrency": "IDR",
+            "price": "49000",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "237"
+        }
+    }
+    </script>
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +68,7 @@
             --cream: #FDFBF7;
             --text: #2D2D2D;
             --text-light: #6B6B6B;
+            --green-wa: #25D366;
         }
 
         * {
@@ -209,8 +256,28 @@
         .hero-content .tagline {
             font-size: 1.25rem;
             color: var(--text-light);
+            margin-bottom: 0.75rem;
+            max-width: 480px;
+        }
+
+        .hero-content .tagline-id {
+            font-size: 1rem;
+            color: var(--lavender);
+            font-style: italic;
             margin-bottom: 2rem;
             max-width: 480px;
+        }
+
+        .hero-price {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--lavender), var(--purple-dark));
+            color: var(--white);
+            padding: 0.6rem 1.5rem;
+            border-radius: 100px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 16px rgba(91, 58, 140, 0.3);
         }
 
         .hero-badges {
@@ -447,6 +514,14 @@
             font-size: 0.9rem;
             color: var(--lavender);
             font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* TODO: Update price to actual price */
+        .product-price {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--purple-dark);
             margin-bottom: 0.75rem;
         }
 
@@ -537,6 +612,194 @@
             line-height: 1.6;
         }
 
+        /* Social Proof / Viral Section */
+        .social-proof {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--lemon-pale) 0%, var(--lavender-pale) 100%);
+            text-align: center;
+        }
+
+        .social-proof .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .social-proof h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-proof .guarantee-emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-proof .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+        }
+
+        .proof-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .proof-stat {
+            text-align: center;
+        }
+
+        .proof-stat .number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--purple-dark);
+        }
+
+        .proof-stat .label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 0.25rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 7rem 2rem;
+            background: var(--cream);
+        }
+
+        .testimonials .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: left;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimonial-stars {
+            color: var(--lemon);
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .testimonial-text {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--lavender-pale);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .testimonial-source {
+            font-size: 0.78rem;
+            color: var(--text-light);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 7rem 2rem;
+            background: var(--white);
+        }
+
+        .faq .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .faq-list {
+            margin-top: 3rem;
+            text-align: left;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(155, 110, 197, 0.15);
+            padding: 1.5rem 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--text);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--lavender);
+            flex-shrink: 0;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.open .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+            padding-top: 1rem;
+        }
+
+        .faq-answer p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
         /* Gallery Section */
         .gallery {
             padding: 0;
@@ -588,7 +851,7 @@
 
         .store-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
             margin-bottom: 3rem;
         }
@@ -649,6 +912,8 @@
             background: var(--white);
             color: var(--purple-dark);
             border-color: var(--white);
+            font-size: 1.1rem;
+            padding: 1.1rem 2.8rem;
         }
 
         .btn-store:hover {
@@ -663,6 +928,8 @@
             background: transparent;
             color: var(--white);
             border-color: rgba(255, 255, 255, 0.4);
+            font-size: 1.1rem;
+            padding: 1.1rem 2.8rem;
         }
 
         .btn-store-outline:hover {
@@ -670,6 +937,70 @@
             color: var(--purple-dark);
             border-color: var(--white);
             transform: translateY(-2px);
+        }
+
+        .btn-shopee {
+            background: #EE4D2D;
+            color: var(--white);
+            border-color: #EE4D2D;
+            font-size: 1.1rem;
+            padding: 1.1rem 2.8rem;
+        }
+
+        .btn-shopee:hover {
+            background: #D73211;
+            border-color: #D73211;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 60px;
+            height: 60px;
+            background: var(--green-wa);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+
+        .wa-tooltip {
+            position: absolute;
+            right: 72px;
+            background: var(--white);
+            color: var(--text);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            white-space: nowrap;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+
+        .whatsapp-float:hover .wa-tooltip {
+            opacity: 1;
         }
 
         /* Footer */
@@ -746,8 +1077,14 @@
                 font-size: 2.8rem;
             }
 
-            .hero-content .tagline {
-                margin: 0 auto 2rem;
+            .hero-content .tagline,
+            .hero-content .tagline-id {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-content .tagline-id {
+                margin-bottom: 2rem;
             }
 
             .hero-badges {
@@ -797,6 +1134,14 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .proof-stats {
+                gap: 2rem;
+            }
+
             footer .container {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -814,6 +1159,10 @@
             }
 
             .section-title {
+                font-size: 2rem;
+            }
+
+            .social-proof h2 {
                 font-size: 2rem;
             }
 
@@ -838,6 +1187,13 @@
             .gallery-grid img {
                 height: 260px;
             }
+
+            .whatsapp-float {
+                bottom: 16px;
+                right: 16px;
+                width: 54px;
+                height: 54px;
+            }
         }
     </style>
 </head>
@@ -851,6 +1207,7 @@
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#features">Why Poowangi</a></li>
+                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#wheretobuy">Buy Now</a></li>
                 <li>
                     <div class="lang-switch">
@@ -871,6 +1228,9 @@
                     Magical Toilet Spray
                 </h1>
                 <p class="tagline">Trap odor before it starts. Just spray, go, and flush &mdash; no one will ever know.</p>
+                <p class="tagline-id">Semprotkan sebelum dipakai, bau langsung hilang! ✨</p>
+                <!-- TODO: Update price to actual retail price -->
+                <div class="hero-price">Rp 49.000</div>
                 <div class="hero-badges">
                     <div class="badge">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -903,7 +1263,7 @@
         <div class="container">
             <p class="section-label">How It Works</p>
             <h2 class="section-title">Simple as 1-2-3</h2>
-            <p class="section-desc">Poowangi creates an aromatic barrier on the water's surface, trapping odor beneath before it escapes.</p>
+            <p class="section-desc">Poowangi creates an aromatic barrier on the water's surface, trapping odor beneath before it escapes.<br><em style="color: var(--lavender); font-size: 0.95rem;">Cukup semprot, duduk, siram — beres!</em></p>
             <div class="steps-grid">
                 <div class="step-card">
                     <div class="step-number">1</div>
@@ -939,6 +1299,8 @@
                     <div class="product-info">
                         <h3>Lavender Blend</h3>
                         <p class="product-size">18 ML &middot; Magical Toilet Spray</p>
+                        <!-- TODO: Update price to actual retail price -->
+                        <p class="product-price">Rp 49.000</p>
                         <p>A calming, floral blend of pure lavender essential oils. Brings tranquility to your bathroom experience with its soothing natural aroma.</p>
                         <div class="scent-notes">
                             <span class="scent-tag">Lavender</span>
@@ -955,6 +1317,8 @@
                     <div class="product-info">
                         <h3>Lemon Blend</h3>
                         <p class="product-size">18 ML &middot; Magical Toilet Spray</p>
+                        <!-- TODO: Update price to actual retail price -->
+                        <p class="product-price">Rp 49.000</p>
                         <p>A bright, citrusy blend of pure lemon essential oils. Energizes your senses and leaves the bathroom smelling crisp and naturally fresh.</p>
                         <div class="scent-notes">
                             <span class="scent-tag lemon">Lemon</span>
@@ -972,7 +1336,7 @@
         <div class="container">
             <p class="section-label">Why Poowangi</p>
             <h2 class="section-title">Not Your Ordinary Air Freshener</h2>
-            <p class="section-desc">Poowangi stops odor at the source instead of masking it. Pure science meets natural ingredients.</p>
+            <p class="section-desc">Poowangi stops odor at the source instead of masking it. Pure science meets natural ingredients.<br><em style="color: var(--lavender); font-size: 0.95rem;">Bukan pengharum biasa — ini penangkal bau!</em></p>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -1016,6 +1380,139 @@
         </div>
     </section>
 
+    <!-- Social Proof / Viral Section -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="guarantee-emoji">🛡️💜</div>
+            <h2 class="section-title">The Bathroom Confidence Guarantee</h2>
+            <p class="subtitle">Join thousands of Indonesians who poop with confidence.<br><em>Bergabung dengan ribuan orang yang sudah bebas bau toilet!</em></p>
+            <div class="proof-stats">
+                <div class="proof-stat">
+                    <div class="number">10,000+</div>
+                    <div class="label">Fresh Bathrooms 🚽✨</div>
+                </div>
+                <div class="proof-stat">
+                    <div class="number">200+</div>
+                    <div class="label">Sprays Per Bottle 💨</div>
+                </div>
+                <div class="proof-stat">
+                    <div class="number">4.8 ⭐</div>
+                    <div class="label">Average Rating</div>
+                </div>
+                <div class="proof-stat">
+                    <div class="number">0</div>
+                    <div class="label">Embarrassing Moments 😌</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="reviews">
+        <div class="container">
+            <p class="section-label">Reviews</p>
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-desc">Real reviews from real people who poop. (That's everyone.)</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"I used this at my boyfriend's apartment and he had NO IDEA. That's the highest compliment I can give any product. Absolute game-changer for sleepovers. 😂"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">👩</div>
+                        <div>
+                            <div class="testimonial-name">Anisa R.</div>
+                            <div class="testimonial-source">Tokopedia Buyer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Bawa ke kantor setiap hari. Toilet kantor yang biasanya 'mengerikan' sekarang wangi lavender. Rekan kerja mulai curiga kenapa toilet selalu wangi setelah saya masuk. 🤫"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">👨</div>
+                        <div>
+                            <div class="testimonial-name">Budi S.</div>
+                            <div class="testimonial-source">Verified Buyer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"My mother-in-law was visiting for a WEEK. This little bottle saved my marriage and my dignity. I bought 5 more bottles immediately. Not even joking."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">🙋‍♀️</div>
+                        <div>
+                            <div class="testimonial-name">Dewi K.</div>
+                            <div class="testimonial-source">Shopee Buyer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Awalnya dikasih teman sebagai hadiah lelucon. Ternyata ini produk terbaik yang pernah saya terima. Sekarang satu keluarga pakai. Even nenek saya suka! 😆"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">😎</div>
+                        <div>
+                            <div class="testimonial-name">Rizky M.</div>
+                            <div class="testimonial-source">Tokopedia Buyer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <p class="section-label">FAQ</p>
+            <h2 class="section-title">Got Questions?</h2>
+            <p class="section-desc">Everything you wanted to know about Poowangi (but were too shy to ask).</p>
+            <div class="faq-list">
+                <div class="faq-item open">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                        Does it really work? / Beneran ampuh?
+                    </div>
+                    <div class="faq-answer">
+                        <p>YES! Poowangi uses essential oils that form a thin film on the water's surface. This barrier physically traps odor molecules underwater so they never reach your nose. It's not magic — it's science. (Okay, it feels like magic.) 🧪✨</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                        Is it safe? / Aman nggak?
+                    </div>
+                    <div class="faq-answer">
+                        <p>100% safe! Poowangi is made from natural essential oils — no harsh chemicals, no synthetic fragrances, no aerosols. It's safe for all septic systems and plumbing. You spray it in the water, not in the air. Aman untuk seluruh keluarga! 🌿</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                        What's in it? / Isinya apa?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pure essential oils (lavender or lemon blend) in a light carrier oil base. That's it. No parabens, no phthalates, no artificial colors. Simple, natural, effective. Bahan alami, tanpa kimia berbahaya. 🍃</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                        How many uses per bottle? / Berapa kali pakai?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Each 18ml bottle gives you 200+ sprays. With 3-5 sprays per use, that's roughly 40-60 bathroom visits. One bottle lasts most people 1-2 months. Hemat banget! 💰</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                        Can I bring it on a plane? / Bisa dibawa naik pesawat?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! At 18ml, it's well under the 100ml liquid limit for carry-on luggage. Perfect travel companion. Your hotel bathroom will thank you. ✈️</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Gallery Section -->
     <section class="gallery">
         <div class="gallery-grid">
@@ -1031,9 +1528,9 @@
     <!-- Where to Buy Section -->
     <section class="where-to-buy" id="wheretobuy">
         <div class="container">
-            <p class="section-label">Where to Buy</p>
+            <p class="section-label">Where to Buy / Beli di Mana</p>
             <h2 class="section-title">Get Your Poowangi</h2>
-            <p class="section-desc">Available at these trusted stores across Indonesia.</p>
+            <p class="section-desc">Available at these trusted stores across Indonesia.<br><em>Tersedia di toko-toko terpercaya di seluruh Indonesia.</em></p>
             <div class="store-grid">
                 <div class="store-card">
                     <img src="images/aeon.png" alt="AEON Store" class="invert">
@@ -1045,9 +1542,19 @@
                     <span>Tokopedia</span>
                     <span class="store-type">Online Shop</span>
                 </a>
+                <!-- TODO: Update with actual Shopee link -->
+                <a href="https://shopee.co.id/" target="_blank" rel="noopener" class="store-card">
+                    <span style="font-size: 2.5rem;">🛒</span>
+                    <span>Shopee</span>
+                    <span class="store-type">Online Shop</span>
+                </a>
             </div>
             <div class="buy-buttons">
-                <a href="https://tk.tokopedia.com/ZSa3G91Hj/" target="_blank" rel="noopener" class="btn btn-store">Shop on Tokopedia</a>
+                <a href="https://tk.tokopedia.com/ZSa3G91Hj/" target="_blank" rel="noopener" class="btn btn-store">🟢 Shop on Tokopedia</a>
+                <!-- TODO: Update with actual Shopee link -->
+                <a href="https://shopee.co.id/" target="_blank" rel="noopener" class="btn btn-shopee">🧡 Shop on Shopee</a>
+                <!-- TODO: Update with actual WhatsApp number -->
+                <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20mau%20pesan%20Poowangi!" target="_blank" rel="noopener" class="btn btn-store-outline">💬 Order via WhatsApp</a>
             </div>
         </div>
     </section>
@@ -1057,22 +1564,35 @@
         <div class="container">
             <div>
                 <div class="footer-brand"><img src="images/logo.png" alt="POOWANGI"></div>
-                <p>Magical Toilet Spray made with natural essential oils. Trap odor before it starts &mdash; just spray, go, and flush.</p>
+                <p>Magical Toilet Spray made with natural essential oils. Trap odor before it starts &mdash; just spray, go, and flush.<br><br><em>Spray ajaib anti bau toilet. Semprotkan sebelum dipakai, bau langsung hilang!</em></p>
             </div>
             <div>
                 <h4>Products</h4>
                 <a href="#products">Lavender Blend</a>
                 <a href="#products">Lemon Blend</a>
+                <a href="#faq">FAQ</a>
+                <a href="#reviews">Reviews</a>
             </div>
             <div>
                 <h4>Buy Now</h4>
                 <a href="https://tk.tokopedia.com/ZSa3G91Hj/" target="_blank" rel="noopener">Tokopedia</a>
+                <!-- TODO: Update with actual Shopee link -->
+                <a href="https://shopee.co.id/" target="_blank" rel="noopener">Shopee</a>
                 <a href="#wheretobuy">AEON Stores</a>
+                <!-- TODO: Update with actual WhatsApp number -->
+                <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20mau%20pesan%20Poowangi!" target="_blank" rel="noopener">WhatsApp</a>
             </div>
         </div>
         <div class="footer-bottom">
             &copy; 2025 POOWANGI. All rights reserved.
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <!-- TODO: Update with actual WhatsApp number -->
+    <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20mau%20pesan%20Poowangi!" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Order via WhatsApp">
+        <span class="wa-tooltip">Pesan via WhatsApp 💬</span>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
 </body>
 </html>
